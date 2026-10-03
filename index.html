@@ -1,4 +1,201 @@
+
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Product Intelligence Studio is a private, local-first research and original design development application."><title>Product Intelligence Studio | Marketplace Research & Design</title><style>
-:root{color-scheme:dark;--bg:#0b1117;--panel:#142029;--text:#f0f5f4;--muted:#a4b7bb;--accent:#72e0b2}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#173a37 0%,transparent 38%),var(--bg);color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}a{color:var(--accent)}.wrap{max-width:1060px;margin:auto;padding:0 24px}header{border-bottom:1px solid #304047;padding:20px 0}.brand{font-weight:800;letter-spacing:.03em}.brand span{color:var(--accent)}nav{float:right}nav a{margin-left:20px;text-decoration:none;color:var(--muted)}.hero{padding:100px 0 75px}.eyebrow{color:var(--accent);font-size:.82rem;letter-spacing:.16em;font-weight:700;text-transform:uppercase}h1{font-size:clamp(2.4rem,6vw,4.5rem);line-height:1.12;max-width:840px;letter-spacing:-.04em;margin:15px 0 22px}.lead{font-size:1.22rem;color:var(--muted);max-width:760px}section{padding:48px 0}h2{font-size:1.75rem;letter-spacing:-.02em}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid #2a4145;border-radius:14px;padding:24px}.card h3{margin-top:0;color:var(--accent)}p,li{color:var(--muted)}.notice{border-left:3px solid var(--accent);padding:15px 22px;background:#122421;border-radius:0 10px 10px 0}footer{margin-top:40px;padding:30px 0;border-top:1px solid #304047;color:var(--muted);font-size:.9rem}@media(max-width:720px){nav{float:none;margin-top:8px}nav a{margin:0 16px 0 0}.grid{grid-template-columns:1fr}.hero{padding:65px 0 35px}}
-</style></head><body><header><div class="wrap"><div class="brand">PRODUCT <span>INTELLIGENCE</span> STUDIO</div><nav><a href="#features">Features</a><a href="#data">Data & Privacy</a><a href="#about">About</a></nav></div></header><main><div class="wrap"><div class="hero"><div class="eyebrow">Private • Local-first • In development</div><h1>Marketplace insights. Original product ideas.</h1><p class="lead">Product Intelligence Studio is a privately operated research and design development application. It helps evaluate marketplace categories, discover trends, and develop original digital and print-on-demand product concepts using AI-assisted workflows.</p></div><section id="features"><h2>What the application does</h2><div class="grid"><div class="card"><h3>Marketplace research</h3><p>Studies publicly available listing information, including titles, prices, descriptions, keywords, and available marketplace indicators.</p></div><div class="card"><h3>Opportunity analysis</h3><p>Organizes research over time to evaluate product categories, demand signals, design conventions, and opportunities for differentiation. Public signals are not represented as verified individual sales totals.</p></div><div class="card"><h3>Original design development</h3><p>Supports AI-assisted ideation, original artwork creation, product mockups, and draft listing preparation with manual review before any publication.</p></div></div></section><section id="data"><h2>Data use & privacy</h2><p>The application is intended for private use by its operator, runs locally, and is not offered as a public service. Marketplace data is accessed only through authorized methods and in accordance with applicable API permissions and platform terms. The application does not seek access to other sellers' private sales records.</p><p>Research records and drafts are stored locally. When AI functionality is enabled, task-related content may be sent to configured AI service providers for processing under their applicable policies. API credentials are not published on this website. No public user accounts are offered.</p><div class="notice">Publishing, external account changes, and other consequential actions require operator review and approval. The application is under development; described capabilities may be expanded or revised.</div></section><section id="about"><h2>About the project</h2><p>Product Intelligence Studio is an independent, experimental software project for marketplace research and original product development. It is not affiliated with, endorsed by, or operated by Etsy, Inc. Etsy is a trademark of its respective owner.</p><p>Project repository: <a href="https://github.com/MetaVisual/product-intelligence-studio">github.com/MetaVisual/product-intelligence-studio</a>.</p></section></div></main><footer><div class="wrap">© 2026 Product Intelligence Studio · Independent research and design software</div></footer></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Product Intelligence Studio is a private, local-first research and original design development application.">
+<title>Product Intelligence Studio | Marketplace Research & Design</title>
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #0b1117;
+  --panel: #142029;
+  --text: #f0f5f4;
+  --muted: #a4b7bb;
+  --accent: #72e0b2;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(circle at 80% 0%, #173a37 0%, transparent 38%), var(--bg);
+  color: var(--text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+}
+a { color: var(--accent); }
+.wrap { max-width: 1060px; margin: auto; padding: 0 24px; }
+header { border-bottom: 1px solid #304047; padding: 20px 0; }
+.brand { font-weight: 800; letter-spacing: .03em; }
+.brand span { color: var(--accent); }
+nav { float: right; }
+nav a { margin-left: 20px; text-decoration: none; color: var(--muted); }
+.hero { padding: 100px 0 75px; }
+.eyebrow {
+  color: var(--accent);
+  font-size: .82rem;
+  letter-spacing: .16em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1.12;
+  max-width: 840px;
+  letter-spacing: -.04em;
+  margin: 15px 0 22px;
+}
+.lead { font-size: 1.22rem; color: var(--muted); max-width: 760px; }
+section { padding: 48px 0; }
+h2 { font-size: 1.75rem; letter-spacing: -.02em; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.card {
+  background: var(--panel);
+  border: 1px solid #2a4145;
+  border-radius: 14px;
+  padding: 24px;
+}
+.card h3 { margin-top: 0; color: var(--accent); }
+p, li { color: var(--muted); }
+.notice {
+  border-left: 3px solid var(--accent);
+  padding: 15px 22px;
+  background: #122421;
+  border-radius: 0 10px 10px 0;
+}
+footer {
+  margin-top: 40px;
+  padding: 30px 0;
+  border-top: 1px solid #304047;
+  color: var(--muted);
+  font-size: .9rem;
+}
+@media(max-width:720px) {
+  nav { float: none; margin-top: 8px; }
+  nav a { margin: 0 16px 0 0; }
+  .grid { grid-template-columns: 1fr; }
+  .hero { padding: 65px 0 35px; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">PRODUCT <span>INTELLIGENCE</span> STUDIO</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#data">Data & Privacy</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Private • Local-first • In development</div>
+    <h1>Marketplace insights. Original product ideas.</h1>
+    <p class="lead">
+      Product Intelligence Studio is a privately operated research and design
+      development application. It helps evaluate marketplace categories,
+      discover trends, and develop original digital and print-on-demand
+      product concepts using AI-assisted workflows.
+    </p>
+  </div>
+
+  <section id="features">
+    <h2>What the application does</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Marketplace research</h3>
+        <p>Studies publicly available listing information, including titles,
+        prices, descriptions, keywords, and available marketplace indicators.</p>
+      </div>
+      <div class="card">
+        <h3>Opportunity analysis</h3>
+        <p>Organizes research over time to evaluate product categories,
+        demand signals, design conventions, and opportunities for
+        differentiation. Public signals are not represented as verified
+        individual sales totals.</p>
+      </div>
+      <div class="card">
+        <h3>Original design development</h3>
+        <p>Supports AI-assisted ideation, original artwork creation,
+        product mockups, and draft listing preparation with manual
+        review before any publication.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="data">
+    <h2>Data use & privacy</h2>
+    <p>
+      The application is intended for private use by its operator,
+      runs locally, and is not offered as a public service.
+      Marketplace data is accessed only through authorized methods
+      and in accordance with applicable API permissions and platform
+      terms. The application does not seek access to other sellers'
+      private sales records.
+    </p>
+    <p>
+      Research records and drafts are stored locally. When AI
+      functionality is enabled, task-related content may be sent
+      to configured AI service providers for processing under
+      their applicable policies. API credentials are not published
+      on this website. No public user accounts are offered.
+    </p>
+    <div class="notice">
+      Publishing, external account changes, and other consequential
+      actions require operator review and approval. The application
+      is under development; described capabilities may be expanded
+      or revised.
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About the project</h2>
+    <p>
+      Product Intelligence Studio is an independent, experimental
+      software project for marketplace research and original product
+      development. It is not affiliated with, endorsed by, or
+      operated by Etsy, Inc. Etsy is a trademark of its respective owner.
+    </p>
+    <p>
+      Project repository:
+      <a href="https://github.com/MetaVisual/product-intelligence-studio">
+        github.com/MetaVisual/product-intelligence-studio
+      </a>.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Product Intelligence Studio is independently developed
+      and managed by MetaVisual.
+    </p>
+    <p>
+      For application inquiries, API-related questions,
+      or privacy concerns, please contact:
+    </p>
+    <p>
+      <a href="mailto:davis.christopher.k@gmail.com">
+        davis.christopher.k@gmail.com
+      </a>
+    </p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    © 2026 Product Intelligence Studio · Independent research and design software
+  </div>
+</footer>
+
+</body>
+</html>
